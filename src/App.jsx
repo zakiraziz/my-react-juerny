@@ -1,14 +1,12 @@
-import Student from './Student.jsx'
 
-function App(){
-  return(
-<>
-    <Student name="Spongebob" age={30} isStudent={true}/>
-    <Student name="Patrick" age={42} isStudent={false}/>
-    <Student name="Squidward" age={50} isStudent={false}/>
-    <Student name="Sandy" age={27} isStudent={true}/>
-</>
-  )
+import ToDolist from "./my ToDolist.jsx";
+
+
+function App() {
+
+  return(<ColorPicker />);
+  
 }
+
 
 export default App
