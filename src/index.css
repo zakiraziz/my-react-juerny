@@ -1,0 +1,22 @@
+.component-box {
+  background-color: #ffffff;
+  padding: 24px;
+  margin: 16px auto;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.component-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb; /* Tailwind blue-600 */
+  margin-bottom: 8px;
+}
+
+.component-box h2 {
+  font-size: 18px;
+  color: #374151; /* Tailwind gray-700 */
+  margin-bottom: 16px;
+}
