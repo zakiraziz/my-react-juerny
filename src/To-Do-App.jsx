@@ -28,3 +28,30 @@ export default function App() {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && addTask()}
           />
+<button
+            onClick={addTask}
+            className="bg-indigo-600 text-white px-4 rounded-r-md hover:bg-indigo-700"
+          >
+            Add
+          </button>
+        </div>
+        <ul className="space-y-2">
+          {tasks.map((task, index) => (
+            <li
+              key={index}
+              className="bg-gray-100 p-2 rounded-lg flex justify-between items-center"
+            >
+              <span>{task}</span>
+              <button
+                onClick={() => removeTask(index)}
+                className="text-red-500 hover:text-red-700"
+              >
+                ✖
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
