@@ -34,3 +34,30 @@ body {
   display: flex;
   margin-bottom: 20px;
 }
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #6366f1;
+}
+
+button.add-btn {
+  padding: 10px 20px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.add-btn:hover {
+  background-color: #4f46e5;
+}
