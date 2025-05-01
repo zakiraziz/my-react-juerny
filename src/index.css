@@ -34,6 +34,7 @@ body {
   display: flex;
   margin-bottom: 20px;
 }
+
 input[type="text"] {
   flex: 1;
   padding: 10px;
@@ -61,7 +62,8 @@ button.add-btn {
 button.add-btn:hover {
   background-color: #4f46e5;
 }
-task-list {
+
+.task-list {
   list-style: none;
   padding: 0;
 }
@@ -81,6 +83,12 @@ task-list {
   transform: scale(1.02);
 }
 
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+  opacity: 0.7;
+}
+
 button.remove-btn {
   background: none;
   border: none;
@@ -92,4 +100,38 @@ button.remove-btn {
 
 button.remove-btn:hover {
   color: #dc2626;
+}
+
+/* Clear button style */
+.clear-btn {
+  width: 100%;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-btn:hover {
+  background-color: #fecaca;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    border-radius: 10px 10px 0 0;
+  }
+
+  button.add-btn {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
 }
